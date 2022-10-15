@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Форма</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action="/form" method="post">
+	  <div>
+		<label for="name">Имя:</label>
+		<input type="text" id="name" name="user_name">
+	  </div>
+	  <div>
+		<label for="mail">Электронная почта:</label>
+		<input type="email" id="mail" name="user_email">
+	  </div>
+	  <div>
+		<label for="mail">Сумма кредита:</label>
+		<input type="text" id="summa" name="summa_credit">
+	  </div>
+	  <div>
+		<label for="mail">Первоначальный взнос:</label>
+		<input type="text" id="contribution" name="contribution_credit">
+	  </div>
+	  <div class="list_radio">
+		<label for="mail">Кредитный продукт:</label>
+		 <p><input type="radio" name="type_credit" value="a1">Потребительский кредит<Br>
+			<input type="radio" name="type_credit" value="a2">Ипотека<Br>
+			<input type="radio" name="type_credit" value="a3">Автокредит<Br>
+			<input type="radio" name="type_credit" value="a4">Кредит для иных нужд</p>
+	  </div>
+	  <div class="list_checkbox">
+		<label for="mail">Возможный залог:</label>
+		 <p><input type="checkbox" name="type_pledge" value="v1">Квартира<Br>
+			<input type="checkbox" name="type_pledge" value="v2">Автомобиль<Br>
+			<input type="checkbox" name="type_pledge" value="v3">Иная недвижимость</p>
+	  </div>
+	  <div>
+		<label for="msg">Письмо:</label>
+		<textarea id="msg" name="user_message"></textarea>
+	  </div>
+
+	  <div class="button">
+		<button type="submit">Оставить заявку на одобрение кредита</button>
+	  </div>
+
+	</form>
+</body>
